@@ -14,7 +14,13 @@ mkdir Documents/Projects
 mkdir Documents/Plugins
 
 git clone git@github.com:smilinmonki666/dotfiles.git .dotfiles
-./dotfiles/install.sh
+
+cd ~/.dotfiles
+for f in $( ls ); do;
+	ln -s $f ~/$f
+done;
+
+cd ~
 
 cd ~/Sites/ruby/jekyll\ Sites\
 git clone git@github.com:smilinmonki666/futurepixels.co.uk
