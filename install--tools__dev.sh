@@ -23,6 +23,9 @@ curl -L https://get.rvm.io | bash -s stable --ruby --rails
 source ~/.rvm/scripts/rvm
 rvm use system
 
+# Node tools
+brew install node
+
 # MySql
 brew cask install SequelPro
 
