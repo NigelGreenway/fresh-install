@@ -13,6 +13,7 @@ brew install terminal-notifier # https://github.com/alloy/terminal-notifier/blob
 brew install zsh
 brew install coreutils
 brew install irssi
+brew install task
 
 # Reference tools
 brew cask install Colours
