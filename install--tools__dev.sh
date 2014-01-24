@@ -2,6 +2,10 @@
 
 # Development tools
 
+# prereq's
+brew install gnutls
+brew install cmake
+
 # git++-
 brew install git
 
