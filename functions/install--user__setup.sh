@@ -30,6 +30,6 @@ for f in $( ls )
 
 cd ~
 
-cd ~/Sites/ruby/jekyll\ Sites\
+cd ~/Sites/ruby/jekyll\ sites\
 git clone git@github.com:smilinmonki666/futurepixels.co.uk
 cd ~
