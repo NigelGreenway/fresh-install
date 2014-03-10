@@ -1,6 +1,3 @@
-## Install applications first.
-##
-
 # Stop if something fails
 set -e
 
@@ -20,3 +17,5 @@ sudo chflags hidden /opt
 brew tap phinze/homebrew-cask
 
 brew install brew-cask
+
+echo 'Brew and Brew-cask has finished installing...'
