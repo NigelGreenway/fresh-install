@@ -5,7 +5,9 @@ set -e
 cd ~
 
 # Install homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+if [ ! -d "/usr/local/Cellar" ]; then
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
 
 # homebrew-cask apps directory
 if [ ! -d "/opt" ]; then
@@ -16,8 +18,12 @@ fi
 sudo chflags hidden /opt
 
 # Install homebrew-cask for easily installing application binaries
-sudo brew tap phinze/homebrew-cask
+if [ "brew tap | grep phinze/homebrew-cask" ]; then
+    sudo brew tap phinze/homebrew-cask
+fi
 
-sudo brew install brew-cask
+if [ "brew list | grep brew-cask" ]; then
+    sudo brew install brew-cask
+fi
 
 echo 'Brew and Brew-cask has finished installing...'
