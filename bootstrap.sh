@@ -6,7 +6,6 @@ GREEN="\[\033[0;32m\]"
 WHITE="\[\033[1;37m\]"
 
 set -e
-cd ~
 
 sh functions/install--user__setup.sh
 sh functions/install--brew.sh
