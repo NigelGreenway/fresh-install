@@ -20,7 +20,7 @@ mkdir -p Documents/Projects/node
 
 mkdir -p Documents/Plugins
 
-git clone git@github.com:smilinmonki666/dotfiles.git .dotfiles
+git clone https://github.com/smilinmonki666/dotfiles.git ~/.dotfiles
 
 cd ~/.dotfiles
 for f in $( ls ); do;
