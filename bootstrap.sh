@@ -8,7 +8,7 @@ WHITE="\[\033[1;37m\]"
 set -e
 cd ~
 
-sh install--user__setup.sh
-sh install--brew.sh
-sh install--tools__dev.sh
-sh install--tools__other.sh
+sh functions/install--user__setup.sh
+sh functions/install--brew.sh
+sh functions/install--tools__dev.sh
+sh functions/install--tools__other.sh
