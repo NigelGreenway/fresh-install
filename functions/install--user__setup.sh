@@ -31,5 +31,5 @@ for f in $( ls )
 cd ~
 
 cd ~/Sites/ruby/jekyll\ sites
-git clone git@github.com:smilinmonki666/futurepixels.co.uk
+git clone https://github.com/smilinmonki666/futurepixels.co.uk
 cd ~
