@@ -23,9 +23,10 @@ mkdir -p Documents/Plugins
 git clone https://github.com/smilinmonki666/dotfiles.git ~/.dotfiles
 
 cd ~/.dotfiles
-for f in $( ls ); do;
+for f in $( ls )
+    do
 	ln -s $f ~/$f
-done;
+    done
 
 cd ~
 
