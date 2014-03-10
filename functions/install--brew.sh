@@ -16,8 +16,8 @@ fi
 sudo chflags hidden /opt
 
 # Install homebrew-cask for easily installing application binaries
-brew tap phinze/homebrew-cask
+sudo brew tap phinze/homebrew-cask
 
-brew install brew-cask
+sudo brew install brew-cask
 
 echo 'Brew and Brew-cask has finished installing...'
