@@ -1,23 +1,23 @@
-brew cask install dropbox
+sudo brew cask install dropbox
 echo "Open Dropbox for configuration"
 read
 
 # Install browsers
-brew cask install firefox
-brew cask install opera
-brew cask install google-chrome
+sudo brew cask install firefox
+sudo brew cask install opera
+sudo brew cask install google-chrome
 echo "Open Chrome and set up accounts for syncing + extensions."
-open /opt/homebrew-cask/Caskroom/google-chrome/stable-channel/Google\ Chrome.app
+open /opt/homesudo brew-cask/Caskroom/google-chrome/stable-channel/Google\ Chrome.app
 read
 
 ## Install productivity tools
-brew cask install AppCleaner
-brew cask install Clamxav
-brew cask install TimeMachineEditor
-brew cask install Cord
-brew cask install Handbrake
-brew cask install Adium
-brew cask install Bettertouchtool
+sudo brew cask install AppCleaner
+sudo brew cask install Clamxav
+sudo brew cask install TimeMachineEditor
+sudo brew cask install Cord
+sudo brew cask install Handbrake
+sudo brew cask install Adium
+sudo brew cask install Bettertouchtool
 echo "Configure Clamxav"
 read
 
