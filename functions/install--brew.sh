@@ -8,7 +8,9 @@ cd ~
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 # homebrew-cask apps directory
-sudo mkdir /opt
+if [ ! -d "/opt" ]; then
+    sudo mkdir /opt
+fi
 
 # Hide it!
 sudo chflags hidden /opt
