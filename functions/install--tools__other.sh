@@ -34,5 +34,7 @@ echo "• Sourcetree"
 echo "• Evernote"
 echo "• xCode"
 echo "• AirMail"
+echo "• Textual"
+echo "• WriterPro"
 read
 echo "Setup sublime text with themes, configs, packages..."
