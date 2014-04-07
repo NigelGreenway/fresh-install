@@ -38,6 +38,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 # Enable fnKey
 defaults write -g com.apple.keyboard.fnState -boolean true
 
+# Change dock to only show active Apps
+defaults write com.apple.dock static-only -bool true
+
 # TODO: set default browser
 
 for app in "SystemUIServer"; do
