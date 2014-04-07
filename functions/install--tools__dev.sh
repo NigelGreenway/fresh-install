@@ -33,7 +33,7 @@ rvm --default use system
 brew install node
 
 # MySql
-brew cask install SequelPro
+sudo brew cask install sequel-pro
 
 # Install editors
 brew cask install sublime-text-3
