@@ -21,7 +21,7 @@ sudo brew cask install vagrant
 sudo brew cask install virtualbox
 
 # Reference tools
-brew cask install Colours
+sudo brew cask install colors
 
 # Ruby tools
 sudo brew cask install jewelrybox
