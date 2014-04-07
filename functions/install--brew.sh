@@ -26,4 +26,6 @@ if [ "brew list | grep brew-cask" ]; then
     brew install brew-cask
 fi
 
+echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile
+
 echo 'Brew and Brew-cask has finished installing...'
