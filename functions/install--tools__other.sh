@@ -11,13 +11,13 @@ open /opt/homesudo brew-cask/Caskroom/google-chrome/stable-channel/Google\ Chrom
 read
 
 ## Install productivity tools
-sudo brew cask install AppCleaner
-sudo brew cask install Clamxav
-sudo brew cask install TimeMachineEditor
-sudo brew cask install Cord
-sudo brew cask install Handbrake
-sudo brew cask install Adium
-sudo brew cask install Bettertouchtool
+sudo brew cask install appcleaner
+sudo brew cask install clamxav
+sudo brew cask install timeMachineeditor
+sudo brew cask install cord
+sudo brew cask install handbrake
+sudo brew cask install adium
+sudo brew cask install bettertouchtool
 echo "Configure Clamxav"
 read
 
