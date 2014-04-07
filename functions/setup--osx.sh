@@ -43,6 +43,9 @@ defaults write com.apple.dock static-only -bool true
 
 # TODO: set default browser
 
-for app in "SystemUIServer"; do
+killList=( "SystemUIServer" "Dock" "Finder" )
+
+for app in "$(killList[@])"
+do
   killall "$app" > /dev/null 2>&1
 done
