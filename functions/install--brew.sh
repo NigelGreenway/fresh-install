@@ -4,9 +4,13 @@ set -e
 # Ensure we start in the user's home directory
 cd ~
 
+echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile
+
 # Install homebrew
 if [ ! -d "/usr/local/Cellar" ]; then
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    brew update && brew upgrade brew-cask && brew cleanup
+    brew doctor
 fi
 
 # homebrew-cask apps directory
@@ -25,7 +29,5 @@ fi
 if [ "brew list | grep brew-cask" ]; then
     brew install brew-cask
 fi
-
-echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile
 
 echo 'Brew and Brew-cask has finished installing...'
