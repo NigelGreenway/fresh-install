@@ -35,6 +35,9 @@ defaults write com.apple.BezelServices kDimTime -int 10
 # Don't create .DS_Store files on network drives
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
+# Enable fnKey
+defaults write -g com.apple.keyboard.fnState -boolean true
+
 # TODO: set default browser
 
 for app in "SystemUIServer"; do
