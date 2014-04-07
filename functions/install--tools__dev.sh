@@ -24,7 +24,7 @@ sudo brew cask install virtualbox
 brew cask install Colours
 
 # Ruby tools
-sudobrew cask install Jewelrybox
+sudo brew cask install jewelrybox
 curl -L https://get.rvm.io | bash -s stable --ruby --rails
 source ~/.rvm/scripts/rvm
 rvm --default use system
