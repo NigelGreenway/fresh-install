@@ -41,4 +41,5 @@ echo "Setup Sublime text"
 echo "Add license key"
 read
 
-brew cask install Textmate # open license key file
+sudo brew cask install textmate2 # open license key file
+echo "Add license key"
