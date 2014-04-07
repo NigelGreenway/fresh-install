@@ -17,8 +17,8 @@ brew install zsh
 brew install coreutils
 brew install irssi
 brew install task
-brew cask install vagrant
-brew cask install virtualbox
+sudo brew cask install vagrant
+sudo brew cask install virtualbox
 
 # Reference tools
 brew cask install Colours
