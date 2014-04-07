@@ -28,6 +28,10 @@ if [ "brew tap | grep phinze/homebrew-cask" ]; then
     brew tap phinze/homebrew-cask
 fi
 
+if [ "brew tap | grep caskroom/versions" ]; then
+    brew tap caskroom/versions
+fi
+
 if [ "brew list | grep brew-cask" ]; then
     brew install brew-cask
 fi
