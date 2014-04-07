@@ -10,6 +10,9 @@ set -e
 echo 'Have you installed xCode and the command line tools?'
 read
 
+echo 'Do NOT forget to open xCode and Agree to the license! -- ps/ Can we not automate this?'
+read
+
 sh functions/install--brew.sh
 sh functions/install--tools__dev.sh
 sh functions/install--tools__other.sh
