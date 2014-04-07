@@ -36,8 +36,7 @@ brew install node
 sudo brew cask install sequel-pro
 
 # Install editors
-brew cask install sublime-text-3
-ln -s /Users/whoami/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl # Link `subl` binary
+sudo brew cask install sublime-text3
 echo "Setup Sublime text"
 echo "Add license key"
 read
