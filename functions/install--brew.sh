@@ -9,6 +9,7 @@ echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile
 # Install homebrew
 if [ ! -d "/usr/local/Cellar" ]; then
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    brew prune
     brew update && brew upgrade brew-cask && brew cleanup
     brew doctor
 fi
