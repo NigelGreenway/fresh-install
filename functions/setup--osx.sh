@@ -19,6 +19,11 @@ defaults write com.apple.dashboard mcx-disabled -boolean true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# Allow Three Finger Drag on the trackpad
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -boolean 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -boolean 0
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -boolean 0
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -boolean 0
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -31,7 +36,6 @@ defaults write com.apple.BezelServices kDimTime -int 10
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 # TODO: set default browser
-# TODO: three finger drag
 
 for app in "SystemUIServer"; do
   killall "$app" > /dev/null 2>&1
