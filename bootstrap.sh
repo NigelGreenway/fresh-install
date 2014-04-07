@@ -7,6 +7,8 @@ WHITE="\[\033[1;37m\]"
 
 set -e
 
+CURDIR=$(pwd)
+
 echo 'Have you installed xCode and the command line tools?'
 read
 
