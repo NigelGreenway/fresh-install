@@ -13,7 +13,7 @@ read
 ## Install productivity tools
 sudo brew cask install appcleaner
 sudo brew cask install clamxav
-sudo brew cask install timeMachineeditor
+sudo brew cask install timemachineeditor
 sudo brew cask install cord
 sudo brew cask install handbrake
 sudo brew cask install adium
