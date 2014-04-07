@@ -11,7 +11,7 @@ source ~/.bash_profile
 if [ ! -d "/usr/local/Cellar" ]; then
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
     brew prune
-    brew update && brew upgrade brew-cask && brew cleanup
+    brew update && brew cleanup
     brew doctor
 fi
 
@@ -34,6 +34,7 @@ fi
 
 if [ "brew list | grep brew-cask" ]; then
     brew install brew-cask
+    brew upgrade brew-cask
 fi
 
 echo 'Brew and Brew-cask has finished installing...'
