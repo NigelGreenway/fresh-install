@@ -5,6 +5,7 @@ set -e
 cd ~
 
 echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile
+source ~/.bash_profile
 
 # Install homebrew
 if [ ! -d "/usr/local/Cellar" ]; then
