@@ -32,4 +32,4 @@ cd ~
 
 cd ~/Sites/ruby/jekyll\ sites
 git clone https://github.com/smilinmonki666/futurepixels.co.uk
-cd ~/fresh-install
+cd $CURDIR
