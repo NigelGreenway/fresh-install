@@ -20,13 +20,15 @@ mkdir -p Documents/Projects/node
 
 mkdir -p Documents/Plugins
 
+mkdir -p Documents/Sublime\ Text\ Projects/php
+mkdir -p Documents/Sublime\ Text\ Projects/ruby
+mkdir -p Documents/Sublime\ Text\ Projects/python
+mkdir -p Documents/Sublime\ Text\ Projects/node
+
 git clone https://github.com/smilinmonki666/dotfiles.git ~/.dotfiles
 
-cd ~/.dotfiles
-for f in $( ls )
-    do
-	ln -s $f ~/$f
-    done
+rm ~/.bash_profile
+ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 
 cd ~
 
