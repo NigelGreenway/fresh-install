@@ -12,7 +12,7 @@ if [ ! -f "/usr/local/bin/brew" ]; then
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
     brew prune
     brew update && brew cleanup
-    brew doctor
+    #brew doctor
 fi
 
 # homebrew-cask apps directory
