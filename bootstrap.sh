@@ -19,7 +19,7 @@ sh functions/install--brew.sh
 sh functions/install--user__setup.sh
 sh functions/install--tools__dev.sh
 sh functions/install--tools__other.sh
-sh functions/setup—osx.sh
+sh functions/setup—-osx.sh
 
 brew linkapps
 
