@@ -12,7 +12,7 @@ if [ ! -f "/usr/local/bin/brew" ]; then
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
     brew prune
     brew update && brew cleanup
-    #brew doctor
+    brew doctor
 fi
 
 # homebrew-cask apps directory
@@ -24,17 +24,18 @@ fi
 sudo chflags hidden /opt
 
 # Install homebrew-cask for easily installing application binaries
-if [ ! "brew tap | grep phinze/homebrew-cask" ]; then
+if [[ ! $(brew tap | grep phinze/homebrew-cask) ]]; then
     brew tap phinze/homebrew-cask
 fi
 
-if [ ! "brew tap | grep caskroom/versions" ]; then
+if [[ ! $(brew tap | grep caskroom/versions) ]]; then
     brew tap caskroom/versions
 fi
 
-if [ ! "brew list | grep brew-cask" ]; then
+if [[ ! $(brew list | grep brew-cask) ]]; then
     brew install brew-cask
     brew upgrade brew-cask
 fi
 
 echo 'Brew and Brew-cask has finished installing...'
+echo "$ERR"
