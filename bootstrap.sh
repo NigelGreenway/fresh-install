@@ -21,6 +21,8 @@ sh functions/install--tools__dev.sh
 sh functions/install--tools__other.sh
 sh functions/setup—osx.sh
 
+brew linkapps
+
 cd "$pwd"
 cd ..
 rmdir fresh-install
