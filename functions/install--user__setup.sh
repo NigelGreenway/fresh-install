@@ -33,6 +33,8 @@ ln -s ~/Documents/Projects/dotfiles/.dotfiles ~/.dotfiles
 ln -s ~/Documents/Projects/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Documents/Projects/dotfiles/.tmux.conf ~/.tmux.conf
 
+rm -rf ~/Downloads/About\ Downloads.lpdf
+
 cd ~
 
 cd ~/Sites/ruby/jekyll\ sites
