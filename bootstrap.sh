@@ -20,3 +20,7 @@ sh functions/install--user__setup.sh
 sh functions/install--tools__dev.sh
 sh functions/install--tools__other.sh
 sh functions/setup—osx.sh
+
+cd "$pwd"
+cd ..
+rmdir fresh-install
