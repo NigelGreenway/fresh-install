@@ -3,7 +3,7 @@ read
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
-sudo spctl --master-enable
+sudo spctl --master-disable
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
