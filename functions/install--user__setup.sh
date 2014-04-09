@@ -25,10 +25,13 @@ mkdir -p Documents/Sublime\ Text\ Projects/ruby
 mkdir -p Documents/Sublime\ Text\ Projects/python
 mkdir -p Documents/Sublime\ Text\ Projects/node
 
-git clone https://github.com/smilinmonki666/dotfiles.git ~/.dotfiles
+git clone https://github.com/smilinmonki666/dotfiles.git ~/Documents/Projects/dotfiles
 
 rm ~/.bash_profile
-ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
+ln -s ~/Documents/Projects/dotfiles/.bash_profile ~/.bash_profile
+ln -s ~/Documents/Projects/dotfiles/.dotfiles ~/.dotfiles
+ln -s ~/Documents/Projects/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/Documents/Projects/dotfiles/.tmux.conf ~/.tmux.conf
 
 cd ~
 
