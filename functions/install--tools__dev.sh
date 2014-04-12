@@ -34,6 +34,10 @@ brew install node
 
 # MySql
 sudo brew cask install sequel-pro
+brew install mysql
+mkdir -p ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 
 # Install editors
 sudo brew cask install sublime-text3
