@@ -39,6 +39,12 @@ mkdir -p ~/Library/LaunchAgents
 ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 
+# Instructions to remove MySQL
+# brew remove mysql
+# brew cleanup
+# launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+# rm -Rf ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+
 # Install editors
 sudo brew cask install sublime-text3
 echo "Setup Sublime text"
