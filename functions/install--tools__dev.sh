@@ -53,3 +53,7 @@ read
 
 sudo brew cask install textmate2 # open license key file
 echo "Add license key"
+
+# Install Composer
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
