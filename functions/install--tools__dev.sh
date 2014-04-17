@@ -19,6 +19,7 @@ brew install irssi
 brew install task
 sudo brew cask install vagrant
 sudo brew cask install virtualbox
+brew install ctags
 
 # Reference tools
 sudo brew cask install colors
