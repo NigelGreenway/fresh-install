@@ -58,3 +58,9 @@ echo "Add license key"
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
+
+# Install vagrant extras
+vagrant plugin install vagrant-vbguest
+sudo easy_install pip
+sudo pip install ansible --quiet
+sudo pip install markupsafe
