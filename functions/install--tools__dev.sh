@@ -20,6 +20,7 @@ brew install task
 sudo brew cask install vagrant
 sudo brew cask install virtualbox
 brew install ctags
+brew install homebrew/php/phpunit
 
 # Reference tools
 sudo brew cask install colors
