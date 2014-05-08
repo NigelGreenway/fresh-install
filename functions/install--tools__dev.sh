@@ -30,6 +30,8 @@ sudo brew cask install jewelrybox
 curl -L https://get.rvm.io | bash -s stable --ruby --rails
 source ~/.rvm/scripts/rvm
 rvm --default use system
+brew install tmux
+gem install teamocil
 
 # Node tools
 brew install node
