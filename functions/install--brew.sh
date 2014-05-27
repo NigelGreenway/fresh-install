@@ -24,6 +24,10 @@ fi
 sudo chflags hidden /opt
 
 # Install homebrew-cask for easily installing application binaries
+if [[ ! $(brew tap | grep josegonzalez/homebrew-php) ]]; then
+    brew tap josegonzalez/homebrew-php
+fi
+
 if [[ ! $(brew tap | grep phinze/homebrew-cask) ]]; then
     brew tap phinze/homebrew-cask
 fi
