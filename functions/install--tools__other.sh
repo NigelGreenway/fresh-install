@@ -18,6 +18,7 @@ sudo brew cask install cord
 sudo brew cask install handbrake
 sudo brew cask install adium
 sudo brew cask install bettertouchtool
+gem install sass
 echo "Configure Clamxav"
 read
 
