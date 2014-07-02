@@ -23,6 +23,11 @@ brew install homebrew/php/phpunit
 # Reference tools
 sudo brew cask install colors
 
+# PHP Tools
+wget http://pear.php.net/go-pear.phar
+php go-pear.phar
+sudo pecl channel-update pecl.php.net
+
 # Ruby tools
 sudo brew cask install jewelrybox
 curl -L https://get.rvm.io | bash -s stable --ruby --rails
