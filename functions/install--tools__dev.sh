@@ -9,8 +9,6 @@ brew install cmake
 brew install git
 
 # Terminal based apps
-brew cask install iterm2
-brew cask install Macvim
 brew install trash
 brew install terminal-notifier # https://github.com/alloy/terminal-notifier/blob/master/README.markdown
 brew install zsh
