@@ -32,6 +32,7 @@ ln -s ~/Documents/Projects/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/Documents/Projects/dotfiles/.dotfiles ~/.dotfiles
 ln -s ~/Documents/Projects/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Documents/Projects/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/Documents/Projects/dotfiles/.vimrc ~/.vimrc
 
 rm -rf ~/Downloads/About\ Downloads.lpdf
 
