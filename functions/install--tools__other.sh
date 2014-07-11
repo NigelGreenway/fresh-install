@@ -6,6 +6,7 @@ read
 sudo brew cask install firefox
 sudo brew cask install opera
 sudo brew cask install google-chrome
+sudo brew cask install airmail
 echo "Open Chrome and set up accounts for syncing + extensions."
 open /opt/homesudo brew-cask/Caskroom/google-chrome/stable-channel/Google\ Chrome.app
 read
