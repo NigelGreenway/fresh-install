@@ -53,7 +53,7 @@ function install_composer() {
 }
 
 function setup_mysql() {
-    mkdir-p ~/Library/LaunchAgents
+    mkdir -p ~/Library/LaunchAgents
     ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
     launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 }
