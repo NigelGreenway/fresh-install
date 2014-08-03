@@ -16,10 +16,11 @@ function install_homebrew() {
 
 function install_brews() {
     brew tap caskroom/homebrew-cask
+    brew tap caskroom/versions
 
     brews=( gnutls cmake git trash terminal-notifier\
             coreutils irssi task ctags node mysql\
-            tree tmux wget zsh-syntax-highlighting )
+            tree tmux wget zsh-syntax-highlighting brew-cask )
 
     for item in "${brews[@]}"
     do
