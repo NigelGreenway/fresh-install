@@ -36,7 +36,7 @@ defaults write -g com.apple.keyboard.fnState -boolean true
 defaults write com.apple.dock static-only -bool true
 
 # Set default browser
-open -a $HOME/Application/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --make-default-browser 
+open -a /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app
 
 killList=( "SystemUIServer" "Dock" "Finder" "Google\ Chrome" )
 
