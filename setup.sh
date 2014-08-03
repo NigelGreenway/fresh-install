@@ -10,7 +10,7 @@ function create_symlinks() {
         ln -s $file $HOME/$(basename $file)
     done
 
-    ln -s /Applications/Sublime\ Text\ 3.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+    ln -s /opt/homebrew-cask/Caskroom/sublime-text3/Build\ 3059/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 }
 
 function replace_sublime_user_directory() {
