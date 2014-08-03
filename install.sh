@@ -1,15 +1,13 @@
 function install_xcode() {
     read -r -p "Have you installed Xcode from the app store? [y/N] " response
     case $response in
-        [yY] [eE] [sS] [yY] )
-                xcode-select install
+        [yY] )
+                xcode-select --install
                 ;;
         *)
                 return
                 ;;
     esac
-
-    xcode-select --install
 }
 
 function install_homebrew() {
