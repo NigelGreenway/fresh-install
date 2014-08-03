@@ -7,7 +7,7 @@ function create_symlinks() {
 
     for file in $(find $docfiles -not -iwholename '*git/*' -type f)
     do
-    	ln -s $file $HOME/$(basename $file)
+        ln -s $file $HOME/$(basename $file)
     done
 
     ln -s /Applications/Sublime\ Text\ 3.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
