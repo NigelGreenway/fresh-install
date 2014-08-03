@@ -10,6 +10,7 @@ function create_symlinks() {
         ln -s $file $HOME/$(basename $file)
     done
 
+    ln -s $HOME/Documents/Projects/Dotfiles/Autocomplete $HOME/Autocomplete
     ln -s /opt/homebrew-cask/Caskroom/sublime-text3/Build\ 3059/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 }
 
