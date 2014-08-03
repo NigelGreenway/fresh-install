@@ -42,9 +42,9 @@ function install_casks() {
 
 function install_vagrant_extras() {
     vagrant plugin install vagrant-vbguest
-    easy_install pip
-    pip install ansible --quiet
-    pip install markupsafe
+    sudo easy_install pip
+    sudo pip install ansible --quiet
+    sudo pip install markupsafe
 }
 
 function install_composer() {
