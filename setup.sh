@@ -24,6 +24,7 @@ function replace_sublime_user_directory() {
     rm -rf $sublimeDirectory
     git clone https://github.com/smilinmonki666/sublime-user.git $sublimeDirectory
     echo "Sublime Text will now open, leave it open as it will be installing all of the packages!"
+    subl
 }
 
 clone_dotfiles \
