@@ -22,7 +22,7 @@ function replace_sublime_user_directory() {
     echo "Press enter key to continue..."
     read
     rm -rf $sublimeDirectory
-    git clone http://github.com/smilinmonki666/sublime-user.git $sublimeDirectory
+    git clone https://github.com/smilinmonki666/sublime-user.git $sublimeDirectory
     echo "Sublime Text will now open, leave it open as it will be installing all of the packages!"
 }
 
