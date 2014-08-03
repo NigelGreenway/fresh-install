@@ -27,6 +27,6 @@ function replace_sublime_user_directory() {
     subl
 }
 
-clone_dotfiles \
-&& create_symlinks \
-&& replace_sublime_user_directory
+clone_dotfiles && \
+create_symlinks && \
+replace_sublime_user_directory
