@@ -5,7 +5,7 @@ function clone_dotfiles() {
 function create_symlinks() {
     docfiles="$HOME/Documents/Projects/Dotfiles"
 
-    for file in $(find $docfiles -not -iwholename '*git/*' -type f)
+    for file in $(find $docfiles -not -iwholename '*git/*' -not -iwholename '*Autocomplete*' -type f)
     do
         ln -s $file $HOME/$(basename $file)
     done
