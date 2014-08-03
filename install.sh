@@ -70,7 +70,7 @@ function install_ruby_gems() {
 
     for item in "${gems[@]}"
     do
-        gem install $item
+        sudo gem install $item
     done
 }
 
