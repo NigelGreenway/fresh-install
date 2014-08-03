@@ -40,7 +40,7 @@ open -a /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app
 
 killList=( "SystemUIServer" "Dock" "Finder" )
 
-for app in "$(killList[@])"
+for app in "($killList[@])"
 do
   killall "$app" > /dev/null 2>&1
 done
