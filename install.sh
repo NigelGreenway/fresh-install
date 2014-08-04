@@ -83,6 +83,19 @@ function install_node_packages() {
     done
 }
 
+function install_php_extras() {
+    # Install & setup virtphp
+    https://github.com/virtphp/virtphp/releases/download/v0.5.0-alpha/virtphp.phar
+    mv virtphp.phar /usr/local/bin/virtphp
+    sudo chown 0755/usr/local/bin/virtphp
+    # Install & setup phpenv
+    git clone https://github.com/CHH/phpenv.git
+    ./phpenv/bin/phpenv-install.sh
+    git clone https://github.com/CHH/php-build.git
+    sudo ./php-build/install.sh
+    sudo php-build --definitions
+}
+
 install_xcode && \
 install_homebrew && \
 install_brews && \
@@ -92,4 +105,5 @@ install_composer && \
 install_pear && \
 install_ruby_gems && \
 install_node_packages && \
+install_php_extras && \
 setup_mysql
