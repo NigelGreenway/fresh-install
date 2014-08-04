@@ -79,7 +79,7 @@ function install_node_packages() {
 
     for item in "${packages[@]}"
     do
-        npm install $item
+        npm install -g $item
     done
 }
 
