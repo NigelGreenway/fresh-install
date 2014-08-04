@@ -49,7 +49,7 @@ function install_vagrant_extras() {
 
 function install_composer() {
     curl -sS https://getcomposer.org/installer | php
-    mv composer.phar /usr/local/bin.compoer
+    mv composer.phar /usr/local/bin/composer
 }
 
 function setup_mysql() {
