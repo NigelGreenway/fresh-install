@@ -20,7 +20,8 @@ function install_brews() {
 
     brews=( gnutls cmake git trash terminal-notifier\
             coreutils irssi task ctags node mysql\
-            tree tmux wget zsh-syntax-highlighting brew-cask )
+            tree tmux wget zsh-syntax-highlighting brew-cask
+            libpng mcrypt libjpg )
 
     for item in "${brews[@]}"
     do
