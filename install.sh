@@ -76,7 +76,7 @@ function install_ruby_gems() {
 }
 
 function install_node_packages() {
-    package=( vtop )
+    package=( vtop bower )
 
     for item in "${packages[@]}"
     do
