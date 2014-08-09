@@ -2,11 +2,11 @@ function install_xcode() {
     read -r -p "Have you installed Xcode from the app store? [y/N] " response
     case $response in
         [yY] )
-                xcode-select --install
-                ;;
+            xcode-select --install
+            ;;
         *)
-                return
-                ;;
+            return
+            ;;
     esac
 }
 
