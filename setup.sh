@@ -30,3 +30,5 @@ function replace_sublime_user_directory() {
 clone_dotfiles && \
 create_symlinks && \
 replace_sublime_user_directory
+
+chsh -s /bin/zsh
