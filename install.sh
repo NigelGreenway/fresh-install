@@ -30,8 +30,8 @@ function install_brews() {
     brew tap caskroom/homebrew-cask
     brew tap caskroom/versions
 
-    brews=( gnutls cmake git trash terminal-notifier\
-            coreutils irssi task ctags node mysql\
+    brews=( gnutls cmake git trash terminal-notifier \
+            coreutils irssi task ctags node mysql \
             tree tmux wget zsh-syntax-highlighting brew-cask
             libpng mcrypt libjpg autoconf )
 
@@ -43,9 +43,9 @@ function install_brews() {
 }
 
 function install_casks() {
-    casks=( vagrant virtualbox colors sequel-pro sublime-text3\
-            dropbox firefox opera google-chrome appcleaner\
-            clamxav timemachineeditor cord handbrake admium\
+    casks=( vagrant virtualbox colors sequel-pro sublime-text3 \
+            dropbox firefox opera google-chrome appcleaner \
+            clamxav timemachineeditor cord handbrake admium \
             bettertouchtool )
 
     for item in "${casks[@]}"
