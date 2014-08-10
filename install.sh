@@ -18,6 +18,9 @@ function install_xcode() {
 function install_homebrew() {
     echo "Downloading homebrew & installing..."
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile
+    source ~/.bash_profile
+    brew doctor
     clear
 }
 
@@ -80,6 +83,7 @@ function install_pear() {
     wget http://pear.php.net/go-pear.phar
     php go-pear.phar
     rm go-pear.phar
+    sudo ln -s $HOME/pear/bin/* /usr/bin/
     sudo pecl channel-update pecl.php.net
     clear
 }
