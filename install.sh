@@ -52,6 +52,8 @@ function install_casks() {
     do
         brew cask install $item
     done
+    
+    brew linkapps
 }
 
 function install_vagrant_extras() {
