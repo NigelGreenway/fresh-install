@@ -116,12 +116,12 @@ function install_php_extras() {
     https://github.com/virtphp/virtphp/releases/download/v0.5.0-alpha/virtphp.phar
     mv virtphp.phar /usr/local/bin/virtphp
     sudo chown 0755/usr/local/bin/virtphp
-    # Install & setup phpenv
-    git clone https://github.com/CHH/phpenv.git
-    ./phpenv/bin/phpenv-install.sh
-    git clone https://github.com/CHH/php-build.git
-    sudo ./php-build/install.sh
-    sudo php-build --definitions
+    # Install & setup php-brew | https://github.com/phpbrew/phpbrew/blob/develop/README.md
+    curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
+    sudo mv phpbrew /usr/bin/phpbrew
+    chmod +x /usr/bin/phpbrew
+    phpbrew init
+    phpbrew lookup-prefix homebrew
     clear
 }
 
