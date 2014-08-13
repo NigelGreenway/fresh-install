@@ -103,7 +103,7 @@ function install_ruby_gems() {
 
 function install_node_packages() {
     echo "Installing node packages..."
-    package=( vtop bower grunt-cli )
+    packages=( vtop bower grunt-cli )
 
     for item in "${packages[@]}"
     do
