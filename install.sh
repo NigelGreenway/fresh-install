@@ -92,7 +92,7 @@ function install_pear() {
 
 function install_ruby_gems() {
     echo "Installing Ruby gems..."
-    gems=( sass jekyll teamocil cheat )
+    gems=( sass jekyll teamocil cheat graphviz)
 
     for item in "${gems[@]}"
     do
