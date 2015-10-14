@@ -29,16 +29,25 @@ function install_brews() {
 
     brew tap caskroom/homebrew-cask
     brew tap caskroom/versions
+    brew tap homebrew/versions
 
     brews=( gnutls cmake git trash terminal-notifier \
             coreutils irssi task ctags node mysql \
             tree tmux wget zsh-syntax-highlighting brew-cask
-            libpng mcrypt libjpg autoconf )
+            libpng mcrypt libjpg autoconf re2c bison27 )
 
     for item in "${brews[@]}"
     do
         brew install $item
     done
+
+    links=( bison27 )
+
+    for item in "${brew[@]}"
+    do
+        brew link $item --force
+    done
+
     clear
 }
 
